@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+/*Hacé un programa que le pida al usuario una cadena y luego la copie en otra variable. Mostrá ambas en pantalla.*/
+	int main() {
+	char palabra1[1000];
+	char palabra2[1000];
+	printf("Ingrese primera Frase\n");
+	scanf("%s", &palabra1);
+	strcpy(palabra2,palabra1);
+	printf("Las frases se han copiado frase 1: %s, frase 2: %s\n",palabra1,palabra2);
+	return 0;
+}
