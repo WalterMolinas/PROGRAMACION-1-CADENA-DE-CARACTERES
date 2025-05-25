@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+/*Escribí un programa en C que le pida al usuario ingresar una palabra o frase y luego muestre cuántos caracteres tiene (sin contar el \n). strlen()*/
+	int main() {
+	char palabra[1000];
+	int longitud;
+	printf("Ingrese una Frase\n");
+	fgets(palabra, sizeof(palabra), stdin); 
+	longitud=strlen(palabra)-1;
+	printf("La longitu de la frase %s es: %d",palabra,longitud);
+	return 0;
+}
